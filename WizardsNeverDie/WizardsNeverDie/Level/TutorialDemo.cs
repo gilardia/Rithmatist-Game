@@ -10,15 +10,15 @@ using Rithmatist.Animation;
 using Rithmatist.Farseer;
 using Rithmatist.Level;
 using Rithmatist.Entities;
+using Rithmatist.Entities.Rithmatics;
 
 namespace Rithmatist.Level
 {
     class TutorialDemo : BaseLevel
     {
-
-        private SpriteAnimation _spriteAnimation1;
-        private SpriteAnimation _spriteAnimation2;
-        private AbstractEntity ward1, vig1, vig2, forbid1;
+        KeyboardState kstate = Keyboard.GetState();
+        Player player = new Player(Vector2.Zero);
+        List<AbstractEntity> entities = new List<AbstractEntity>();
         public enum State{
             s1,
             s2,
@@ -37,46 +37,59 @@ namespace Rithmatist.Level
             state = State.s1;
             this.ScreenState = ScreenSystem.ScreenState.Active;
             Camera.Instance.Zoom *= 20f;
+            Farseer.Physics.Instance.World.Clear();
         }
-
         public override void LoadContent()
         {
             base.LoadContent();
-            if (state == State.s1)
+            InitializeState1();       
+        }
+        public void InitializeState1()
+        {
+            LineOfWarding e1 = Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-0, -0), 5) as LineOfWarding;
+            e1.createBody();
+            entities.Add(e1);
+
+            RithmaticFactory.onVigorCreation += (x) =>
             {
-                ward1 = Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-0, -4), 5);
-                vig1 = Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f);
-                if (vig1.OnCollision(ward1))
+                x.onDestruction += () =>
                 {
                     state = State.s2;
-                }
-            }
-            if (state == State.s2)
-            {
-            }
-            
+                    timer = TimeSpan.Zero;
+                    InitializeState2();
+                };
+            };
         }
+        public void InitializeState2()
+        {
+            timer = TimeSpan.Zero;
 
+        }
+        TimeSpan timer = TimeSpan.Zero;
+        TimeSpan max = TimeSpan.FromSeconds(5);
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
-            if (state == State.s1)
+            timer += gameTime.ElapsedGameTime;
+            if (timer > max)
             {
-                ward1.Update(gameTime);
-                vig1.Update(gameTime);
+                timer = TimeSpan.Zero;
+                switch (state)
+                {
+                    case State.s1: player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f), TimeSpan.FromSeconds(2)); break;
+                    case State.s2: player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(14, -10), new Vector2(-5, 2), 1f, 4f, 0f), TimeSpan.FromSeconds(2)); break;
+                }
+
             }
-            if (state == State.s2)
-            {
-                ward1.Update(gameTime);
-                vig1.Update(gameTime);
-            }
+
+            player.queue.construct(gameTime.ElapsedGameTime);
+            RithmaticFactory.Update(gameTime);
             base.Update(gameTime, otherScreenHasFocus, coveredByOtherScreen);
         }
 
         public override void Draw(GameTime gameTime)
         {
             ScreenManager.SpriteBatch.Begin(0, BlendState.AlphaBlend, null, null, null, null, Camera.Instance.View);
-            ward1.Draw(ScreenManager.SpriteBatch);
-            vig1.Draw(ScreenManager.SpriteBatch);
+            RithmaticFactory.Draw(ScreenManager.SpriteBatch);
             ScreenManager.SpriteBatch.End();
             base.Draw(gameTime);
         }

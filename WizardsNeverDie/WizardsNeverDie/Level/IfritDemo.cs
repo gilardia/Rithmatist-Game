@@ -17,7 +17,6 @@ namespace Rithmatist.Level
     class IfritDemo : BaseLevel
     {
         Player player = new Player(Vector2.Zero);
-        private List<AbstractEntity> Lines; 
 
         public IfritDemo()
         {
@@ -30,14 +29,13 @@ namespace Rithmatist.Level
 
         public override void LoadContent()
         {
-            Lines = new List<AbstractEntity>();
             base.LoadContent();
             player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-6, -0), 6), TimeSpan.FromSeconds(5));
             player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-14, -0), 2), TimeSpan.FromSeconds(5));
+            player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfForbiddance(ScreenManager._assetCreator, new Vector2(5, 5), new Vector2(5, 8)), TimeSpan.FromSeconds(1));
             player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(2, -0), 2), TimeSpan.FromSeconds(5));
             player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, -5), new Vector2(-3, 2), 1f, 5f, 0f), TimeSpan.FromSeconds(5));
             player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-3, 0), 1f, 5f, 0f), TimeSpan.FromSeconds(5));
-            player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfForbiddance(ScreenManager._assetCreator, new Vector2(5, 5), new Vector2(5, 8)), TimeSpan.FromSeconds(5));
         }
 
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)

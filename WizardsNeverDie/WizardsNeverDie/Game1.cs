@@ -64,10 +64,12 @@ namespace Rithmatist
 
             IfritDemo ifritDemo = new IfritDemo();
             WizardDemo wizardDemo = new WizardDemo();
+            TutorialDemo tutorialDemo = new TutorialDemo();
 
             MenuScreen menuScreen = new MenuScreen("The Rithmatist");
 
             menuScreen.AddMenuItem("Levels", EntryType.Separator, null);
+            menuScreen.AddMenuItem(tutorialDemo.GetTitle(), EntryType.Screen, tutorialDemo);
             menuScreen.AddMenuItem(ifritDemo.GetTitle(), EntryType.Screen, ifritDemo);
             menuScreen.AddMenuItem(wizardDemo.GetTitle(), EntryType.Screen, wizardDemo);
 

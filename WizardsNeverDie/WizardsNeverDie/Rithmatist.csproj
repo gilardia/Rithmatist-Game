@@ -104,6 +104,7 @@
     <Compile Include="Farseer\VigorBody.cs" />
     <Compile Include="Farseer\WardingBody.cs" />
     <Compile Include="Intelligence\ChalklingIntelligence.cs" />
+    <Compile Include="Level\TutorialDemo.cs" />
     <Compile Include="ScreenSystem\Screen\PhysicsGameScreen.cs" />
     <Compile Include="Utility\Camera.cs" />
     <Compile Include="Entities\AbstractCreature.cs" />

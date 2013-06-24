@@ -9,7 +9,7 @@ using System;
 
 namespace Rithmatist.Farseer
 {
-  class ForbiddanceBody : RithmaticBody
+    class ForbiddanceBody : RithmaticBody
     {
         List<Vector2> points;
         float SIZE;
