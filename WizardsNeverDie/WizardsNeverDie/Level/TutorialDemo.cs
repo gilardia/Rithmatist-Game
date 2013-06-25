@@ -46,7 +46,7 @@ namespace Rithmatist.Level
         }
         public void InitializeState1()
         {
-            LineOfWarding e1 = Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-0, -0), 5) as LineOfWarding;
+            LineOfWarding e1 = RithmaticFactory.CreateLineOfWarding(ScreenManager._assetCreator, new Vector2(-0, -0), 6) as LineOfWarding;
             e1.createBody();
             entities.Add(e1);
 
@@ -63,10 +63,43 @@ namespace Rithmatist.Level
         public void InitializeState2()
         {
             timer = TimeSpan.Zero;
-
+            RithmaticFactory.onVigorCreation += (y) =>
+            {
+                y.onDestruction += () =>
+                {
+                    state = State.s3;
+                    timer = TimeSpan.Zero;
+                    InitializeState3();
+                };
+            };
         }
+        public void InitializeState3()
+        {
+            timer = TimeSpan.Zero;
+            RithmaticFactory.onVigorCreation += (z) =>
+            {
+                z.onDestruction += () =>
+                {
+                    state = State.s4;
+                    timer = TimeSpan.Zero;
+                    InitializeState4();
+                };
+            };
+        }
+        public void InitializeState4()
+        {
+            timer = TimeSpan.Zero;
+            LineOfForbiddance e2 = RithmaticFactory.CreateLineOfForbiddance(ScreenManager._assetCreator, new Vector2(-15, 5), new Vector2(6, 7)) as LineOfForbiddance;
+            e2.createBody();
+            entities.Add(e2);
+        }
+        /*public void InitializeState5()
+        {
+            timer = TimeSpan.Zero;
+
+        }*/
         TimeSpan timer = TimeSpan.Zero;
-        TimeSpan max = TimeSpan.FromSeconds(5);
+        TimeSpan max = TimeSpan.FromSeconds(6);
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
             timer += gameTime.ElapsedGameTime;
@@ -75,8 +108,26 @@ namespace Rithmatist.Level
                 timer = TimeSpan.Zero;
                 switch (state)
                 {
-                    case State.s1: player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f), TimeSpan.FromSeconds(2)); break;
-                    case State.s2: player.queue.add(Vector2.Zero, Rithmatist.Entities.Rithmatics.RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(14, -10), new Vector2(-5, 2), 1f, 4f, 0f), TimeSpan.FromSeconds(2)); break;
+                    case State.s1:
+                        {
+                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f), TimeSpan.FromSeconds(4));
+                        break;
+                        }
+                    case State.s2:
+                        {
+                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(14, -10), new Vector2(-5, 2), 1f, 3f, 0f), TimeSpan.FromSeconds(4));
+                        break;
+                        }
+                    case State.s3:
+                        {
+                            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(-20, 8), new Vector2(5f, -3.5f), 1f, 2f, 0f), TimeSpan.FromSeconds(3));
+                            break;
+                        }
+                    case State.s4:
+                        {
+                            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 9), new Vector2(-6, .1f), 1f, 5f, 0f), TimeSpan.FromSeconds(4));
+                            break;
+                        }
                 }
 
             }

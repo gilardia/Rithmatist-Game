@@ -21,8 +21,8 @@ namespace Rithmatist.Entities.Rithmatics
     class LineOfForbiddance : RithmaticLine
     {
         //Size should be between .05 and .2
-        public const float WIDTH = .15f;
-        public float HEIGHT = .15f;
+        public const float WIDTH = .1f;
+        public float HEIGHT = .1f;
         public List<Vector2> initialPoints = new List<Vector2>();
 
         List<LineDamage> totalDamage = new List<LineDamage>();

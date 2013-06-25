@@ -23,8 +23,8 @@ namespace Rithmatist.Farseer
                 lengthSquared += Vector2.DistanceSquared(points[x], points[x + 1]);
                 length += Vector2.Distance(points[x], points[x + 1]);
             }
-            lengthSquared += Vector2.DistanceSquared(points[points.Count - 1], points[0]);
-            length += Vector2.Distance(points[points.Count - 1], points[0]);
+           // lengthSquared += Vector2.DistanceSquared(points[points.Count - 1], points[0]);
+            //length += Vector2.Distance(points[points.Count - 1], points[0]);
 
         }
         public override void createBody()
@@ -51,8 +51,8 @@ namespace Rithmatist.Farseer
             {
                 if (x + 1 < points.Count)
                     c += Vector2.DistanceSquared(points[x], points[x + 1]);
-                else
-                    c += Vector2.DistanceSquared(points[x], points[0]);
+               // else
+                 //   c += Vector2.DistanceSquared(points[x], points[0]);
                 float circlePerc = c / lengthSquared;
                 while (circlePerc > (float)index / (float)drawPoints)
                 {
@@ -82,8 +82,8 @@ namespace Rithmatist.Farseer
             {
                 if (x + 1 < points.Count)
                     c += Vector2.DistanceSquared(points[x], points[x + 1]);
-                else
-                    c += Vector2.DistanceSquared(points[x], points[0]);
+               // else
+                 //   c += Vector2.DistanceSquared(points[x], points[0]);
                 float linePerc = c / lengthSquared;
                 float drawPerc = index / (float)drawPoints;
                 float initial = drawPerc;
