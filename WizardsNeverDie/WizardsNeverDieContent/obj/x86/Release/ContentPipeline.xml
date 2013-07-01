@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Sprites\Ifrit\ifrit.png</Source>
+      <Name>Sprites\Ifrit\ifrit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Ifrit\ifrit.xnb</Output>
+      <Time>2013-07-01T11:52:18.4675308-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\blank.png</Source>
+      <Name>Materials\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\blank.xnb</Output>
+      <Time>2013-07-01T11:52:18.6550429-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\cursor.png</Source>
+      <Name>Common\cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\cursor.xnb</Output>
+      <Time>2013-07-01T11:52:18.7175464-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\arrow.png</Source>
+      <Name>Common\arrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\arrow.xnb</Output>
+      <Time>2013-07-01T11:52:18.8112944-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\slider.png</Source>
+      <Name>Common\slider</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\slider.xnb</Output>
+      <Time>2013-07-01T11:52:18.733173-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\popup.png</Source>
+      <Name>Common\popup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\popup.xnb</Output>
+      <Time>2013-07-01T11:52:18.748792-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\blank.png</Source>
+      <Name>Common\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\blank.xnb</Output>
+      <Time>2013-07-01T11:52:18.8269262-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\ground.png</Source>
+      <Name>Materials\ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\ground.xnb</Output>
+      <Time>2013-07-01T11:52:18.5769102-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Common\title_screen.png</Source>
+      <Name>Common\title_screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\title_screen.xnb</Output>
+      <Time>2013-07-01T11:52:18.8112944-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\waves.png</Source>
+      <Name>Materials\waves</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\waves.xnb</Output>
+      <Time>2013-07-01T11:52:18.5925389-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\squares.png</Source>
+      <Name>Materials\squares</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\squares.xnb</Output>
+      <Time>2013-07-01T11:52:18.6237896-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\dots.png</Source>
+      <Name>Materials\dots</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\dots.xnb</Output>
+      <Time>2013-07-01T11:52:18.6081614-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\pavement.png</Source>
+      <Name>Materials\pavement</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\pavement.xnb</Output>
+      <Time>2013-07-01T11:52:18.6394152-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Sprite.png</Source>
+      <Name>Sprites\Sprite</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Sprite.xnb</Output>
+      <Time>2013-07-01T11:52:18.3894033-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dust.png</Source>
+      <Name>Sprites\Dust</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Dust.xnb</Output>
+      <Time>2013-07-01T11:52:18.3737833-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Tonberry\tonberry.png</Source>
+      <Name>Sprites\Tonberry\tonberry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Tonberry\tonberry.xnb</Output>
+      <Time>2013-07-01T11:52:18.4987877-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Wizard\wizard.png</Source>
+      <Name>Sprites\Wizard\wizard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Wizard\wizard.xnb</Output>
+      <Time>2013-07-01T11:52:18.420654-04:00</Time>
+    </Item>
+    <Item>
+      <Source>font.spritefont</Source>
+      <Name>font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\font.xnb</Output>
+      <Time>2013-07-01T11:52:18.1862702-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\detailsFont.spritefont</Source>
+      <Name>Fonts\detailsFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\detailsFont.xnb</Output>
+      <Time>2013-07-01T11:52:18.7019151-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\frameRateCounterFont.spritefont</Source>
+      <Name>Fonts\frameRateCounterFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\frameRateCounterFont.xnb</Output>
+      <Time>2013-07-01T11:52:18.6862957-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\menufont.spritefont</Source>
+      <Name>Fonts\menufont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\menufont.xnb</Output>
+      <Time>2013-07-01T11:52:18.670668-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDieContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDieContent\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-05-29T12:49:38.6454609-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

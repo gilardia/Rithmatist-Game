@@ -1,0 +1,2 @@
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDieContent\obj\x86\Release\RithmatistContent.contentprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDieContent\obj\x86\Release\RithmatistContent.contentprojResolveAssemblyReference.cache

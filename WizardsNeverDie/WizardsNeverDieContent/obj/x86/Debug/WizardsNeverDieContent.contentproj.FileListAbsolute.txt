@@ -1,0 +1,2 @@
+C:\Users\Daniel\Documents\GitHub\WizardsNeverDie\WizardsNeverDie\WizardsNeverDieContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Daniel\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDieContent\obj\x86\Debug\ResolveAssemblyReference.cache

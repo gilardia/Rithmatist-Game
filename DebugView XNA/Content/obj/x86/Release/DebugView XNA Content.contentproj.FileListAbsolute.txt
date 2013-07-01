@@ -1,0 +1,2 @@
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\Content\obj\x86\Release\DebugView XNA Content.contentprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\Content\obj\x86\Release\DebugView XNA Content.contentprojResolveAssemblyReference.cache

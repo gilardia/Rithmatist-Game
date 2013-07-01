@@ -1,0 +1,20 @@
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\Content\font.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\DebugViewXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\DebugViewXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.xml
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\obj\x86\Release\DebugViewXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\obj\x86\Release\DebugViewXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\DebugView XNA\obj\x86\Release\DebugView XNA.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\Content\font.xnb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\DebugViewXNA.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\DebugViewXNA.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\bin\x86\Release\FarseerPhysicsXNA.xml
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\obj\x86\Release\DebugView XNA.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\obj\x86\Release\DebugViewXNA.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\DebugView XNA\obj\x86\Release\DebugViewXNA.pdb

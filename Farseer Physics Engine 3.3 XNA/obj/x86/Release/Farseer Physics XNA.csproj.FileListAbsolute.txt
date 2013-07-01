@@ -1,0 +1,12 @@
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\bin\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\bin\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\obj\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\obj\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\Farseer Physics Engine 3.3 XNA\obj\x86\Release\Farseer Physics XNA.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\bin\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\bin\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\obj\x86\Release\Farseer Physics XNA.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\obj\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\Farseer Physics Engine 3.3 XNA\obj\x86\Release\FarseerPhysicsXNA.pdb

@@ -1,0 +1,40 @@
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Ifrit\ifrit.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\blank.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\cursor.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\arrow.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\slider.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\popup.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\blank.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\ground.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\title_screen.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Tonberry\tonberry.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Wizard\wizard.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\detailsFont.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\frameRateCounterFont.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\menufont.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Ifrit\ifrit.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Tonberry\tonberry.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Wizard\wizard.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\WizardsNeverDie.exe
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\WizardsNeverDie.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\DebugViewXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\FarseerPhysicsXNA.dll
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\FarseerPhysicsXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\FarseerPhysicsXNA.xml
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\DebugViewXNA.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\DebugViewXNA.xml
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\WizardsNeverDie.exe
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\WizardsNeverDie.pdb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\Rithmatist.csprojResolveAssemblyReference.cache
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\font.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\waves.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\squares.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\dots.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\pavement.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Sprite.xnb
+C:\Users\Daniel Wieder\Dropbox\WizardsNeverDie\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Dust.xnb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\Rithmatist.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\WizardsNeverDie.exe
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\obj\x86\Release\WizardsNeverDie.pdb
