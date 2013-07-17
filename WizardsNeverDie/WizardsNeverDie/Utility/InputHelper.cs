@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework.Input;
 using Rithmatist.ScreenSystem;
 using Rithmatist.Animation;
 
-namespace Rithmatist
+namespace Rithmatist.Utility
 {
     /// <summary>
     ///   an enum of all available mouse buttons.

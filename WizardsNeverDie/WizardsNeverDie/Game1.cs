@@ -5,6 +5,8 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Rithmatist.Level;
 using Rithmatist.ScreenSystem;
+using System.Net.Sockets;
+using System.Net;
 
 namespace Rithmatist
 {
@@ -12,10 +14,9 @@ namespace Rithmatist
     {
         private GraphicsDeviceManager _graphics;
         private static Game1 instance;
-
         public Game1()
         {
-            Window.Title = "Wizards Never Die";
+            Window.Title = "The Rithmatist";
             instance = this;
 
             _graphics = new GraphicsDeviceManager(this);
@@ -61,24 +62,23 @@ namespace Rithmatist
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
-            IfritDemo ifritDemo = new IfritDemo();
+            
+            NetworkDemoC netDemoc = new NetworkDemoC();
             WizardDemo wizardDemo = new WizardDemo();
             TutorialDemo tutorialDemo = new TutorialDemo();
-
             MenuScreen menuScreen = new MenuScreen("The Rithmatist");
 
             menuScreen.AddMenuItem("Levels", EntryType.Separator, null);
+            menuScreen.AddMenuItem(netDemoc.GetTitle(), EntryType.Screen, netDemoc);
             menuScreen.AddMenuItem(tutorialDemo.GetTitle(), EntryType.Screen, tutorialDemo);
-            menuScreen.AddMenuItem(ifritDemo.GetTitle(), EntryType.Screen, ifritDemo);
             menuScreen.AddMenuItem(wizardDemo.GetTitle(), EntryType.Screen, wizardDemo);
+
 
             ScreenManager.AddScreen(new BackgroundScreen("Common/title_screen"));
             ScreenManager.AddScreen(menuScreen);
            // ScreenManager.AddScreen(new LogoScreen(TimeSpan.FromSeconds(3.0)));
             base.Initialize();
         }
-
         public ScreenManager ScreenManager { get; set; }
     }
 }

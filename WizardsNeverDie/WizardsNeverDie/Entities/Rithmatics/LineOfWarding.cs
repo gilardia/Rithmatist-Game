@@ -23,8 +23,6 @@ namespace Rithmatist.Entities.Rithmatics
     {
         //Size should be between .05 and .2
         public float SIZE = .1f;
-        List<LineDamage> totalDamage = new List<LineDamage>();
-        public const float MAX_HEALTH = 50;
         public float length;
         Vertices verts = new Vertices();
         public LineOfWarding(Animation.DrawingSystem.AssetCreator assetCreator, Vector2 position, float radius)
@@ -67,19 +65,6 @@ namespace Rithmatist.Entities.Rithmatics
             body.setCollision(Physics.CollisionGroup.LineOfWarding, Physics.CollisionGroup.LineOfVigor | Physics.CollisionGroup.LineOfMaking);
             foreach (Body b in body.Bodies)
                 b.BodyType = BodyType.Static;
-        }
-        public void addDamage(Vector2 position, float damage)
-        {
-            Vector2 localPosition = position - body.Position;
-            totalDamage.Add(new LineDamage(localPosition, 5f, damage));
-        }
-        public float getHealth(Vector2 position)
-        {
-            Vector2 localPosition = position - body.Position;
-            float health = MAX_HEALTH;
-            foreach (LineDamage damage in totalDamage)
-                health -= damage.getDamage(localPosition);
-            return health;
         }
         public override void Dispose()
         {

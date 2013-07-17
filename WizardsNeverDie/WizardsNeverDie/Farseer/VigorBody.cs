@@ -122,8 +122,6 @@ namespace Rithmatist.Farseer
         }
         private void extendPath()
         {
-            timer = totalPath.ControlPoints.Count / (totalPath.ControlPoints.Count + repeatingPath.ControlPoints.Count - 1f);
-            originalTimer = originalLength / (totalPath.ControlPoints.Count + repeatingPath.ControlPoints.Count - 1f); 
             Vector2 endPoint = totalPath.ControlPoints[totalPath.ControlPoints.Count - 1];
             foreach (Vector2 repeatPoint in repeatingPath.ControlPoints)
             {
@@ -132,6 +130,8 @@ namespace Rithmatist.Farseer
                 Vector2.Add(ref endPoint, ref tempPoint, out newPoint);
                 totalPath.Add(newPoint);
             }
+            timer = totalPath.ControlPoints.Count / (totalPath.ControlPoints.Count - 1f);
+            originalTimer = originalLength / (totalPath.ControlPoints.Count + repeatingPath.ControlPoints.Count - 1f); 
             totalPath.RefreshDelta();
         }
         private void rotatePath(float radians)
@@ -168,12 +168,12 @@ namespace Rithmatist.Farseer
             }
             return array;
         }
-        public byte[] getColorAlpha()
+        public float[] getColorAlpha(Vector2[] positions)
         {
-            byte[] array = new byte[count];
+            float[] array = new float[count];
             for (int index = 0; index < count; index++)
             {
-                array[index] = byte.MaxValue;
+                array[index] = 1f;
             }
             return array;
         }
@@ -211,7 +211,6 @@ namespace Rithmatist.Farseer
                 body.Restitution = 0.3f;
                 body.BodyType = BodyType.Dynamic;
                 body.OnCollision += new OnCollisionEventHandler(onCollision);
-                this.setCollision(Physics.CollisionGroup.LineOfVigor, Physics.CollisionGroup.LineOfWarding & Physics.CollisionGroup.LineOfMaking & Physics.CollisionGroup.LineOfForbiddance);
             }
         }
         protected override bool onCollision(Fixture fixtureA, Fixture fixtureB, FarseerPhysics.Dynamics.Contacts.Contact contact)
@@ -224,14 +223,12 @@ namespace Rithmatist.Farseer
                 FixedArray2<Vector2> points;
                 contact.GetWorldManifold(out normal, out points);
                 Vector2 contactPoint = points[0];
-                if (points[1] != null)
+                LineOfWarding warding = collidedEntity as LineOfWarding;
+                WardingBody wardingBody = warding.getBody() as WardingBody;
+                if (wardingBody.health.getHealth(contactPoint, collidedEntity.Position) > 0)
                 {
-                    contactPoint += points[1];
-                    contactPoint /= 2;
-                }
-                if ((collidedEntity as LineOfWarding).getHealth(contactPoint) > 0)
-                {
-                    (collidedEntity as LineOfWarding).addDamage(contactPoint, 3000f);
+                    Rithmatist.Animation.ParticleSystem.ParticleFactory.Instance.CreateChalkDust(3, contactPoint, Color.Black);
+                    wardingBody.health.addDamage(contactPoint, collidedEntity.Position, 25f, 1f);
                     (entity as RithmaticLine).Dispose();
                 }
                 else

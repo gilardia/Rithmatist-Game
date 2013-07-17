@@ -44,7 +44,7 @@ namespace Rithmatist.Farseer
                 Vector2 position = Vector2.Zero;
                 foreach (Body body in bodies)
                     position += body.Position;
-                position /= bodies.Count;
+                position /= (float)bodies.Count;
                 return position;
             }
             set 

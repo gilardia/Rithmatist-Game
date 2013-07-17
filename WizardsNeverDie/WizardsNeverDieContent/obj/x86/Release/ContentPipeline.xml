@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Ifrit\ifrit.xnb</Output>
-      <Time>2013-07-01T11:52:18.4675308-04:00</Time>
+      <Time>2013-07-01T12:32:35.8562405-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\blank.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\blank.xnb</Output>
-      <Time>2013-07-01T11:52:18.6550429-04:00</Time>
+      <Time>2013-07-01T12:32:36.0906263-04:00</Time>
     </Item>
     <Item>
       <Source>Common\cursor.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\cursor.xnb</Output>
-      <Time>2013-07-01T11:52:18.7175464-04:00</Time>
+      <Time>2013-07-01T12:32:36.1531272-04:00</Time>
     </Item>
     <Item>
       <Source>Common\arrow.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\arrow.xnb</Output>
-      <Time>2013-07-01T11:52:18.8112944-04:00</Time>
+      <Time>2013-07-01T12:32:36.2468835-04:00</Time>
     </Item>
     <Item>
       <Source>Common\slider.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\slider.xnb</Output>
-      <Time>2013-07-01T11:52:18.733173-04:00</Time>
+      <Time>2013-07-01T12:32:36.1687502-04:00</Time>
     </Item>
     <Item>
       <Source>Common\popup.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\popup.xnb</Output>
-      <Time>2013-07-01T11:52:18.748792-04:00</Time>
+      <Time>2013-07-01T12:32:36.1687502-04:00</Time>
     </Item>
     <Item>
       <Source>Common\blank.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\blank.xnb</Output>
-      <Time>2013-07-01T11:52:18.8269262-04:00</Time>
+      <Time>2013-07-01T12:32:36.2625075-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\ground.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\ground.xnb</Output>
-      <Time>2013-07-01T11:52:18.5769102-04:00</Time>
+      <Time>2013-07-01T12:32:35.9812485-04:00</Time>
     </Item>
     <Item>
       <Source>Common\title_screen.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Common\title_screen.xnb</Output>
-      <Time>2013-07-01T11:52:18.8112944-04:00</Time>
+      <Time>2013-07-01T12:32:36.2312579-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\waves.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\waves.xnb</Output>
-      <Time>2013-07-01T11:52:18.5925389-04:00</Time>
+      <Time>2013-07-01T12:32:35.9968679-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\squares.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\squares.xnb</Output>
-      <Time>2013-07-01T11:52:18.6237896-04:00</Time>
+      <Time>2013-07-01T12:32:36.0593766-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\dots.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\dots.xnb</Output>
-      <Time>2013-07-01T11:52:18.6081614-04:00</Time>
+      <Time>2013-07-01T12:32:36.0437484-04:00</Time>
     </Item>
     <Item>
       <Source>Materials\pavement.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Materials\pavement.xnb</Output>
-      <Time>2013-07-01T11:52:18.6394152-04:00</Time>
+      <Time>2013-07-01T12:32:36.074996-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Sprite.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Sprite.xnb</Output>
-      <Time>2013-07-01T11:52:18.3894033-04:00</Time>
+      <Time>2013-07-01T12:32:35.746858-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Dust.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Dust.xnb</Output>
-      <Time>2013-07-01T11:52:18.3737833-04:00</Time>
+      <Time>2013-07-01T12:32:35.7312273-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Tonberry\tonberry.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Tonberry\tonberry.xnb</Output>
-      <Time>2013-07-01T11:52:18.4987877-04:00</Time>
+      <Time>2013-07-01T12:32:35.8874891-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\Wizard\wizard.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Sprites\Wizard\wizard.xnb</Output>
-      <Time>2013-07-01T11:52:18.420654-04:00</Time>
+      <Time>2013-07-01T12:32:35.7781093-04:00</Time>
     </Item>
     <Item>
       <Source>font.spritefont</Source>
@@ -161,7 +161,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\font.xnb</Output>
-      <Time>2013-07-01T11:52:18.1862702-04:00</Time>
+      <Time>2013-07-01T12:32:35.5427013-04:00</Time>
     </Item>
     <Item>
       <Source>Fonts\detailsFont.spritefont</Source>
@@ -170,7 +170,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\detailsFont.xnb</Output>
-      <Time>2013-07-01T11:52:18.7019151-04:00</Time>
+      <Time>2013-07-01T12:32:36.1218729-04:00</Time>
     </Item>
     <Item>
       <Source>Fonts\frameRateCounterFont.spritefont</Source>
@@ -179,7 +179,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\frameRateCounterFont.xnb</Output>
-      <Time>2013-07-01T11:52:18.6862957-04:00</Time>
+      <Time>2013-07-01T12:32:36.1218729-04:00</Time>
     </Item>
     <Item>
       <Source>Fonts\menufont.spritefont</Source>
@@ -188,7 +188,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Anthony\Documents\Visual Studio 2010\Projects\Rithmatist-Game\WizardsNeverDie\WizardsNeverDie\bin\x86\Release\Content\Fonts\menufont.xnb</Output>
-      <Time>2013-07-01T11:52:18.670668-04:00</Time>
+      <Time>2013-07-01T12:32:36.1062519-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

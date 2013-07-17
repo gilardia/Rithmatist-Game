@@ -12,20 +12,22 @@ using Rithmatist.Level;
 using Rithmatist.Entities;
 using Rithmatist.Entities.Rithmatics;
 using Rithmatist.Animation.ParticleSystem;
+using Rithmatist.Networking;
 
 namespace Rithmatist.Level
 {
-    class IfrittDemo : BaseLevel
+    class NetworkDemoC : BaseLevel
     {
         Player player;
-        private List<AbstractEntity> Lines; 
-
-        public IfrittDemo()
+        private List<AbstractEntity> Lines;
+        Client client;
+        public NetworkDemoC()
         {
-            levelDetails = "Sandbox";
-            levelName = "Sandbox";
+            levelDetails = "Client Demo";
+            levelName = "Client Demo";
             this.ScreenState = ScreenSystem.ScreenState.Active;
             Camera.Instance.Zoom *= 20f;
+            client = new Client("127.0.0.1", Rithmatist.Properties.Rithmatist.Default.Port);
         }
         public override void UnloadContent()
         {

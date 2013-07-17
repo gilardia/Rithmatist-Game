@@ -10,12 +10,12 @@ namespace Rithmatist.Animation
     {
         public Vector2 Origin;
         public Texture2D Texture;
-        public Color primaryColor = Color.White;
-        public Color secondaryColor = Color.Silver;
+        public Color primaryColor = Color.Black;
+        public Color secondaryColor = Color.White;
         public int count;
         public delegate Vector2[] GetPosition();
         public delegate float[] GetRotation();
-        public delegate byte[] GetColorAlpha();
+        public delegate float[] GetColorAlpha(Vector2[] positions);
         public GetPosition getPosition;
         public GetRotation getRotation;
         public GetColorAlpha getColorAlpha;
@@ -47,19 +47,17 @@ namespace Rithmatist.Animation
             int max = count;
             Vector2[] positions = getPosition();
             float[] rotations = getRotation();
-            byte[] alphas = getColorAlpha();
+            float[] alphas = getColorAlpha(positions);
             for (int x = 0; x < max * (_percent/100); x ++)
             {
-                secondaryColor.A = alphas[x];
                 spriteBatch.Draw(Texture, Utility.ConvertUnits.ToDisplayUnits(positions[x]), null,
-                                               primaryColor, rotations[x], Origin, 1f,
+                                               primaryColor * alphas[x], rotations[x], Origin, 1f,
                                                SpriteEffects.None, 0f);
             }
             for (int x = (int)(max * ( _percent/100)); x < max; x++)
             {
-                primaryColor.A = alphas[x];
                 spriteBatch.Draw(Texture, Utility.ConvertUnits.ToDisplayUnits(positions[x]), null,
-                                               secondaryColor, rotations[x], Origin, 1f,
+                                               secondaryColor * (float)alphas[x], rotations[x], Origin, 1f,
                                                SpriteEffects.None, 0f);
             }
         }

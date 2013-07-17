@@ -55,8 +55,8 @@ namespace Rithmatist.Farseer
             //The farseer drawing calls should be moved at some point
             Matrix projection = Camera.Instance.SimProjection;
             Matrix view = Camera.Instance.SimView;
-            if (Farseer.Physics.Instance.DebugView != null && Farseer.Physics.Instance.DebugView.Enabled == true)
-               Farseer.Physics.Instance.DebugView.RenderDebugData(ref projection, ref view);
+         //   if (Farseer.Physics.Instance.DebugView != null && Farseer.Physics.Instance.DebugView.Enabled == true)
+         //       Farseer.Physics.Instance.DebugView.RenderDebugData(ref projection, ref view);
         }
         public static Physics Instance
         {

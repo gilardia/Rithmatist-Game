@@ -11,6 +11,7 @@ using Rithmatist.Farseer;
 using Rithmatist.Level;
 using Rithmatist.Entities;
 using Rithmatist.Entities.Rithmatics;
+using Rithmatist.Animation.ParticleSystem;
 
 namespace Rithmatist.Level
 {
@@ -42,7 +43,9 @@ namespace Rithmatist.Level
         public override void LoadContent()
         {
             base.LoadContent();
-            InitializeState1();       
+            InitializeState1();
+            ParticleSystem.Instance.Initialize(this.ScreenManager.Game);
+            ParticleFactory.Instance.Initialize(ScreenManager.Content);
         }
         public void InitializeState1()
         {
@@ -89,9 +92,14 @@ namespace Rithmatist.Level
         public void InitializeState4()
         {
             timer = TimeSpan.Zero;
-            LineOfForbiddance e2 = RithmaticFactory.CreateLineOfForbiddance(ScreenManager._assetCreator, new Vector2(-15, 5), new Vector2(6, 7)) as LineOfForbiddance;
-            e2.createBody();
-            entities.Add(e2);
+            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfForbiddance(ScreenManager._assetCreator, new Vector2(-15, 5), new Vector2(6, 7)), TimeSpan.FromSeconds(2));
+            RithmaticFactory.onForbiddanceCreation += (a) =>
+            {
+                a.onDestruction += () =>
+                {
+                    player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 9), new Vector2(-6, .1f), 1f, 5f, 0f), TimeSpan.FromSeconds(5));
+                };
+            }; 
         }
         /*public void InitializeState5()
         {
@@ -102,6 +110,7 @@ namespace Rithmatist.Level
         TimeSpan max = TimeSpan.FromSeconds(6);
         public override void Update(GameTime gameTime, bool otherScreenHasFocus, bool coveredByOtherScreen)
         {
+            RithmaticFactory.Update(gameTime);
             timer += gameTime.ElapsedGameTime;
             if (timer > max)
             {
@@ -110,22 +119,17 @@ namespace Rithmatist.Level
                 {
                     case State.s1:
                         {
-                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f), TimeSpan.FromSeconds(4));
+                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 5), new Vector2(-4, -4), 1f, 4f, 0f), TimeSpan.FromSeconds(5));
                         break;
                         }
                     case State.s2:
                         {
-                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(14, -10), new Vector2(-5, 2), 1f, 3f, 0f), TimeSpan.FromSeconds(4));
+                        player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(14, -10), new Vector2(-5, 2), 1f, 3f, 0f), TimeSpan.FromSeconds(5));
                         break;
                         }
                     case State.s3:
                         {
-                            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(-20, 8), new Vector2(5f, -3.5f), 1f, 2f, 0f), TimeSpan.FromSeconds(3));
-                            break;
-                        }
-                    case State.s4:
-                        {
-                            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(12, 9), new Vector2(-6, .1f), 1f, 5f, 0f), TimeSpan.FromSeconds(4));
+                            player.queue.add(Vector2.Zero, RithmaticFactory.CreateLineOfVigor(ScreenManager._assetCreator, new Vector2(-20, 8), new Vector2(5f, -3.5f), 1f, 2f, 0f), TimeSpan.FromSeconds(5));
                             break;
                         }
                 }
@@ -141,6 +145,7 @@ namespace Rithmatist.Level
         {
             ScreenManager.SpriteBatch.Begin(0, BlendState.AlphaBlend, null, null, null, null, Camera.Instance.View);
             RithmaticFactory.Draw(ScreenManager.SpriteBatch);
+            ParticleSystem.Instance.Draw(gameTime, ScreenManager.SpriteBatch);
             ScreenManager.SpriteBatch.End();
             base.Draw(gameTime);
         }

@@ -21,8 +21,8 @@ namespace Rithmatist.Entities.Rithmatics
     class LineOfForbiddance : RithmaticLine
     {
         //Size should be between .05 and .2
-        public const float WIDTH = .1f;
-        public float HEIGHT = .1f;
+        public const float WIDTH = .15f;
+        public float HEIGHT = .15f;
         public List<Vector2> initialPoints = new List<Vector2>();
 
         List<LineDamage> totalDamage = new List<LineDamage>();
@@ -55,8 +55,7 @@ namespace Rithmatist.Entities.Rithmatics
         }
         public override void createBody()
         {
-            Vertices path = pointsToLine(initialPoints);
-            body = BasicBody.CreatePolygonBody(this, path, WIDTH);
+            (body as ForbiddanceBody).createBody();
             body.setCollision(Physics.CollisionGroup.LineOfForbiddance, Physics.CollisionGroup.LineOfMaking | Physics.CollisionGroup.LineOfVigor | Physics.CollisionGroup.Player);
             foreach (Body b in body.Bodies)
                 b.BodyType = BodyType.Static;
@@ -87,13 +86,6 @@ namespace Rithmatist.Entities.Rithmatics
                 path.Add(points[x] - perpendicular * WIDTH / 2);
             }
             return path;
-        }
-        public override void Dispose()
-        {
-            body.Dispose();
-            body = null;
-            line.secondaryColor.A = 0;
-            line = null;
         }
         public override void Draw(SpriteBatch spriteBatch)
         {

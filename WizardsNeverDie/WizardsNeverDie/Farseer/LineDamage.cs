@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace Rithmatist.Entities.Rithmatics
+namespace Rithmatist.Farseer
 {
     class LineDamage
     {
@@ -30,7 +30,8 @@ namespace Rithmatist.Entities.Rithmatics
         //and falls off at 1.5
         public float getDamage(Vector2 location)
         {
-            return damage * (float)(1/(propagation *  2.5) * Math.Pow(Math.E, -Math.Pow((Vector2.DistanceSquared(location, this.median)), 2) / 2 * Math.Pow(propagation, 2)));
+            float pow = -(median - location).LengthSquared() / (2 * propagation * propagation);
+            return damage * (float)Math.Pow(Math.E, pow);
         }
     }
 }

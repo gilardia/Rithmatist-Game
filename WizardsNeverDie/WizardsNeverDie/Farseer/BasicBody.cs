@@ -96,7 +96,7 @@ namespace Rithmatist.Farseer
         protected BasicBody()
             : base()
         {        }
-        protected void setBodyValues()
+        protected virtual void setBodyValues()
         {
             foreach (Body body in Bodies)
             {

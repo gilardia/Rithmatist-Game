@@ -5,6 +5,7 @@ using FarseerPhysics.Dynamics.Joints;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using FarseerPhysics;
+using Rithmatist.Utility;
 
 namespace Rithmatist.ScreenSystem
 {

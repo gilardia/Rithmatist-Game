@@ -6,10 +6,11 @@ using FarseerPhysics.Factories;
 using FarseerPhysics.Common.Decomposition;
 using Rithmatist.Entities;
 using System;
+using Rithmatist.Entities.Rithmatics;
 
 namespace Rithmatist.Farseer
 {
-    class ForbiddanceBody : RithmaticBody
+  class ForbiddanceBody : RithmaticBody
     {
         List<Vector2> points;
         float SIZE;
@@ -23,17 +24,33 @@ namespace Rithmatist.Farseer
                 lengthSquared += Vector2.DistanceSquared(points[x], points[x + 1]);
                 length += Vector2.Distance(points[x], points[x + 1]);
             }
-           // lengthSquared += Vector2.DistanceSquared(points[points.Count - 1], points[0]);
-            //length += Vector2.Distance(points[points.Count - 1], points[0]);
 
         }
         public override void createBody()
         {
-            Vertices verticies = new Vertices(points);
+            Vertices verticies = pointsToLine(points);
             List<Vertices> polygons = EarclipDecomposer.ConvexPartition(verticies);
             Body body = BodyFactory.CreateCompoundPolygon(Physics.Instance.World, polygons, 1f);
+          //  Body body = BodyFactory.CreatePolygon(Physics.Instance.World, verticies, 1f);
+            Bodies.Add(body);
             setBodyValues();
 
+        }
+        private Vertices pointsToLine(List<Vector2> points)
+        {
+            Vertices path = new Vertices();
+            Vector2 direction = RithmaticLine.getDirection(points);
+            Vector2 perpendicular = new Vector2(-direction.Y, direction.X);
+            perpendicular.Normalize();
+            for (int x = 0; x < points.Count; x++)
+            {
+                path.Add(points[x] + perpendicular * SIZE / 2);
+            }
+            for (int x = points.Count - 1; x >= 0; x--)
+            {
+                path.Add(points[x] - perpendicular * SIZE / 2);
+            }
+            return path;
         }
         float length = 0;
         float lengthSquared = 0;
@@ -51,8 +68,8 @@ namespace Rithmatist.Farseer
             {
                 if (x + 1 < points.Count)
                     c += Vector2.DistanceSquared(points[x], points[x + 1]);
-               // else
-                 //   c += Vector2.DistanceSquared(points[x], points[0]);
+             //   else
+               //     c += Vector2.DistanceSquared(points[x], points[0]);
                 float circlePerc = c / lengthSquared;
                 while (circlePerc > (float)index / (float)drawPoints)
                 {
@@ -82,8 +99,8 @@ namespace Rithmatist.Farseer
             {
                 if (x + 1 < points.Count)
                     c += Vector2.DistanceSquared(points[x], points[x + 1]);
-               // else
-                 //   c += Vector2.DistanceSquared(points[x], points[0]);
+             //   else
+               //     c += Vector2.DistanceSquared(points[x], points[0]);
                 float linePerc = c / lengthSquared;
                 float drawPerc = index / (float)drawPoints;
                 float initial = drawPerc;
@@ -109,12 +126,12 @@ namespace Rithmatist.Farseer
             }
             return array;
         }
-        public byte[] getColorAlpha()
+        public float[] getColorAlpha(Vector2[] positions)
         {
-            byte[] array = new byte[getGraphicsCount()];
+            float[] array = new float[getGraphicsCount()];
             for (int index = 0; index < getGraphicsCount(); index++)
             {
-                array[index] = byte.MaxValue;
+                array[index] = 1f;
             }
             return array;
         }

@@ -14,6 +14,7 @@ namespace Rithmatist.Farseer
     {
         Vertices points;
         float SIZE;
+        public Health health;
         public WardingBody(AbstractEntity entity, Vertices points, float SIZE)
         {
             this.points = points;
@@ -26,7 +27,7 @@ namespace Rithmatist.Farseer
             }
             circumferenceSquared += Vector2.DistanceSquared(points[points.Count - 1], points[0]);
             circumference += Vector2.Distance(points[points.Count - 1], points[0]);
-
+            health = new Health();
         }
         public override void createBody()
         { 
@@ -111,12 +112,15 @@ namespace Rithmatist.Farseer
             }
             return array;
         }
-        public byte[] getColorAlpha()
+        public float[] getColorAlpha(Vector2[] positions)
         {
-            byte[] array = new byte[getGraphicsCount()];
+            float[] array = new float[getGraphicsCount()];
             for (int index = 0; index < getGraphicsCount(); index++)
             {
-                array[index] = byte.MaxValue;
+                float h = health.getPerc(positions[index], Position, 1);
+                if (h > 0 && h < .3f)
+                    h = .3f;
+                array[index] = h;
             }
             return array;
         }

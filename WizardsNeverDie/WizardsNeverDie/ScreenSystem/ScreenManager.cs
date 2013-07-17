@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input.Touch;
 using Rithmatist.Animation.DrawingSystem;
+using Rithmatist.Utility;
 
 namespace Rithmatist.ScreenSystem
 {
@@ -213,6 +214,7 @@ namespace Rithmatist.ScreenSystem
                 {
                     _spriteBatch.Begin(0, BlendState.AlphaBlend);
                     _spriteBatch.Draw(_transitions[transitionCount], Vector2.Zero, Color.White * screen.TransitionAlpha);
+                    
                     _spriteBatch.End();
 
                     ++transitionCount;
